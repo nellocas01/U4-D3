@@ -1,8 +1,15 @@
 package Esercizio2;
 
+import java.util.Scanner;
+
 public class Main2 {
 	public static void main(String[] args) {
-		int num = 0;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("inserisci un numero intero: ");
+		
+		int num = scanner.nextInt();;
 		switch(num) {
 		case 0:{
 			System.out.println("zero");
@@ -23,5 +30,6 @@ public class Main2 {
 		default:
 			System.out.println("ERRor");
 		}
+		scanner.close();
 	}
 }
