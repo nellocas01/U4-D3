@@ -2,8 +2,10 @@ package Esercizio3;
 
 public class Main3 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		String str = "ciao";
+		while (str.length() <= 5) {
+			System.out.println(str.split());
+		}
 	}
 
 }
