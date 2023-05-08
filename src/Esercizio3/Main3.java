@@ -1,11 +1,23 @@
 package Esercizio3;
 
+import java.util.Scanner;
+
 public class Main3 {
 	public static void main(String[] args) {
-		String str = "ciao";
-		while (str.length() <= 5) {
-			System.out.println(str.split("ciao"));
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String str = "";
+		
+		while (!str.equals(":q")) {
+			System.out.println("inserisci una stringa: ");
+			str = scanner.nextLine();
+			
+			if(!str.equals(":q")) {
+				strDivise.separazione(str)
+			}
 		}
+		scanner.close();
 	}
 
 }
